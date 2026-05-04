@@ -47,11 +47,12 @@ const Highlights = ({ setIsOpen }) => (
         <h2 style={{
           fontFamily: F_JOST, fontWeight: '800',
           fontSize: 'clamp(28px,4vw,40px)',
-          color: '#ffffff', margin: '0 0 20px',
-          textTransform: 'uppercase', letterSpacing: '0.04em',
+          color: '#ffffff', margin: '0 0 14px',
+          textTransform: 'uppercase', letterSpacing: '0.04em', textAlign: 'center',
         }}>
           HIGHLIGHTS
         </h2>
+        <div style={{ width: '60px', height: '4px', background: 'var(--color-gold)', margin: '0 auto 24px', borderRadius: '2px' }} />
 
         {/* 2×3 card grid */}
         <div style={{
@@ -73,7 +74,7 @@ const Highlights = ({ setIsOpen }) => (
                 transition: 'border-color 0.25s, background 0.25s',
               }}
               onMouseEnter={e => {
-                e.currentTarget.style.borderColor = '#C4952A'
+                e.currentTarget.style.borderColor = 'var(--color-gold)'
                 e.currentTarget.style.background = 'rgba(196,149,42,0.06)'
               }}
               onMouseLeave={e => {

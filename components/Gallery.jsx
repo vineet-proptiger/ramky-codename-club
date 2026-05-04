@@ -21,11 +21,12 @@ const Gallery = ({ setIsOpen }) => {
             fontSize: 'clamp(28px,4vw,40px)',
             color: '#1a1a1a', textAlign: 'center',
             textTransform: 'uppercase', letterSpacing: '0.04em',
-            margin: '0 0 48px',
+            margin: '0 0 14px',
           }}
         >
           GALLERY
         </h2>
+        <div style={{ width: '60px', height: '4px', background: 'var(--color-gold)', margin: '0 auto 44px', borderRadius: '2px' }} />
 
         {/* Responsive grid: 2 columns on mobile, 3 on desktop */}
         <div
@@ -104,7 +105,7 @@ const Gallery = ({ setIsOpen }) => {
           <button onClick={() => setLightbox(null)} style={{
             position: 'absolute', top: '20px', right: '20px',
             width: '36px', height: '36px', borderRadius: '2px',
-            background: '#C4952A', border: 'none', color: '#fff',
+            background: 'var(--color-gold)', border: 'none', color: '#fff',
             fontSize: '20px', cursor: 'pointer',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
           }}>×</button>

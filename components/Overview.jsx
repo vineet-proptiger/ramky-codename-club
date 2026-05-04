@@ -80,10 +80,10 @@ const EarlyForm = () => {
     <div style={{ textAlign: 'center', padding: '28px 0' }}>
       <div style={{
         width: '52px', height: '52px', borderRadius: '50%',
-        background: 'rgba(196,149,42,0.12)', border: '2px solid #C4952A',
+        background: 'rgba(196,149,42,0.12)', border: '2px solid var(--color-gold)',
         display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px',
       }}>
-        <svg width="24" height="24" fill="none" stroke="#C4952A" strokeWidth="2.5" viewBox="0 0 24 24">
+        <svg width="24" height="24" fill="none" stroke="var(--color-gold)" strokeWidth="2.5" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
         </svg>
       </div>
@@ -98,25 +98,25 @@ const EarlyForm = () => {
         name="fullname" required value={form.fullname} onChange={handle}
         placeholder="Full Name *"
         onFocus={() => setFocused('fullname')} onBlur={() => setFocused('')}
-        style={{ ...inputStyle, borderColor: focused === 'fullname' ? '#C4952A' : '#e5e7eb' }}
+        style={{ ...inputStyle, borderColor: focused === 'fullname' ? 'var(--color-gold)' : '#e5e7eb' }}
       />
       <input
         name="email" value={form.email} onChange={handle}
         placeholder="Email Address (optional)"
         onFocus={() => setFocused('email')} onBlur={() => setFocused('')}
-        style={{ ...inputStyle, borderColor: focused === 'email' ? '#C4952A' : '#e5e7eb' }}
+        style={{ ...inputStyle, borderColor: focused === 'email' ? 'var(--color-gold)' : '#e5e7eb' }}
       />
       <input
         name="phone" required value={form.phone} onChange={handle}
         placeholder="Mobile Number *" maxLength={10}
         onFocus={() => setFocused('phone')} onBlur={() => setFocused('')}
-        style={{ ...inputStyle, borderColor: focused === 'phone' ? '#C4952A' : '#e5e7eb' }}
+        style={{ ...inputStyle, borderColor: focused === 'phone' ? 'var(--color-gold)' : '#e5e7eb' }}
       />
       {error && <p style={{ color: '#ef4444', fontSize: '12px', fontFamily: F_SANS }}>{error}</p>}
       <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
-        <input type="checkbox" required defaultChecked style={{ accentColor: '#C4952A', marginTop: '3px', flexShrink: 0 }} />
+        <input type="checkbox" required defaultChecked style={{ accentColor: 'var(--color-gold)', marginTop: '3px', flexShrink: 0 }} />
         <span style={{ fontSize: '11px', color: '#9ca3af', fontFamily: F_SANS, lineHeight: 1.6 }}>
-          I agree to the <Link href="/privacy-policy" style={{ color: '#C4952A', textDecoration: 'underline' }}>Privacy Policy</Link>.
+          I agree to the <Link href="/privacy-policy" style={{ color: 'var(--color-gold)', textDecoration: 'underline' }}>Privacy Policy</Link>.
         </span>
       </label>
       <button type="submit" disabled={loading} className="btn-gold" style={{ width: '100%', padding: '13px' }}>
@@ -136,14 +136,15 @@ const Overview = () => (
 
           <h2 style={{
             fontFamily: F_JOST, fontWeight: '800', fontSize: 'clamp(28px,4vw,40px)',
-            color: '#1a1a1a', margin: '0 0 20px', textTransform: 'uppercase', letterSpacing: '0.02em',
+            color: '#1a1a1a', margin: '0 0 14px', textTransform: 'uppercase', letterSpacing: '0.02em', textAlign: 'center',
           }}>
             OVERVIEW
           </h2>
+          <div style={{ width: '60px', height: '4px', background: 'var(--color-gold)', margin: '0 auto 24px', borderRadius: '2px' }} />
 
           <p style={{
             fontFamily: F_SANS, fontSize: '14.5px', color: '#444444',
-            lineHeight: 1.9, margin: '0 0 32px',
+            lineHeight: 1.9, margin: '0 0 32px', textAlign: 'justify',
           }}>
             Ramky Codename Club Class is a premium residential development by Ramky Group, offering 3 & 3.5 BHK apartments across a well-planned 3-acre community in North Bangalore. Designed for modern living, the project combines spacious interiors, contemporary architecture and a secure, gated environment, making it ideal for families and professionals alike.
 
@@ -208,7 +209,7 @@ const Overview = () => (
           }}>
             <div style={{
               background: '#1a1a1a', padding: '16px 20px',
-              borderBottom: '3px solid #C4952A',
+              borderBottom: '3px solid var(--color-gold)',
             }}>
               <h3 style={{
                 fontFamily: F_JOST, fontWeight: '700', fontSize: '16px',

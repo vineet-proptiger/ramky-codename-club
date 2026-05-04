@@ -25,11 +25,12 @@ const MasterPlan = ({ setIsOpen }) => {
             fontSize: 'clamp(28px,4vw,40px)',
             color: '#1a1a1a', textAlign: 'center',
             textTransform: 'uppercase', letterSpacing: '0.04em',
-            margin: '0 0 48px',
+            margin: '0 0 14px',
           }}
         >
           FLOOR PLANS
         </h2>
+        <div style={{ width: '60px', height: '4px', background: 'var(--color-gold)', margin: '0 auto 44px', borderRadius: '2px' }} data-aos="fade-up" />
 
         {/* 3-Column Grid */}
         <div 
@@ -74,7 +75,7 @@ const MasterPlan = ({ setIsOpen }) => {
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
               }}>
                 <div style={{
-                  background: '#C4952A',
+                  background: 'var(--color-gold)',
                   padding: '10px 24px',
                   borderRadius: '4px',
                   boxShadow: '0 4px 12px rgba(0,0,0,0.2)',

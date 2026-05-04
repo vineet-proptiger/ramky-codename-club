@@ -17,7 +17,7 @@ const fieldStyle = {
   fontSize: '14px',
   fontFamily: F_SANS,
   outline: 'none',
-  caretColor: '#C4952A',
+  caretColor: 'var(--color-gold)',
 }
 
 const EnquireModal = ({ isOpen, setIsOpen }) => {
@@ -115,16 +115,16 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
   return (
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center p-4"
-      style={{ background: 'rgba(0,0,0,0.72)', backdropFilter: 'blur(4px)' }}
+      style={{ background: 'rgba(7,30,40,0.88)', backdropFilter: 'blur(6px)' }}
       onClick={() => setIsOpen(false)}
     >
       <div
         style={{
-          background: '#111111',
+          background: 'linear-gradient(160deg, #0C3547 0%, #0E4358 100%)',
           width: '100%',
           maxWidth: '480px',
           borderRadius: '4px',
-          border: '2px solid rgba(255,255,255,0.55)',
+          border: '2px solid rgba(196,149,42,0.5)',
           position: 'relative',
           padding: '36px 28px 28px',
           maxHeight: '95vh',
@@ -163,11 +163,11 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
           <div style={{ textAlign: 'center', padding: '28px 0' }}>
             <div style={{
               width: '54px', height: '54px', borderRadius: '50%',
-              background: 'rgba(196,149,42,0.15)', border: '2px solid #C4952A',
+              background: 'rgba(196,149,42,0.15)', border: '2px solid var(--color-gold)',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               margin: '0 auto 14px',
             }}>
-              <svg width="24" height="24" fill="none" stroke="#C4952A" strokeWidth="2.5" viewBox="0 0 24 24">
+              <svg width="24" height="24" fill="none" stroke="var(--color-gold)" strokeWidth="2.5" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
             </div>
@@ -221,11 +221,11 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', marginBottom: '20px' }}>
               <input
                 type="checkbox" id="popup-privacy" required defaultChecked
-                style={{ accentColor: '#C4952A', marginTop: '2px', flexShrink: 0 }}
+                style={{ accentColor: 'var(--color-gold)', marginTop: '2px', flexShrink: 0 }}
               />
               <label htmlFor="popup-privacy" style={{ fontSize: '11px', color: '#888', fontFamily: F_SANS, lineHeight: 1.6, cursor: 'pointer' }}>
                 I agree to receive updates as per the{' '}
-                <Link href="/privacy-policy" style={{ color: '#C4952A', textDecoration: 'underline' }}>Privacy Policy</Link>.
+                <Link href="/privacy-policy" style={{ color: 'var(--color-gold)', textDecoration: 'underline' }}>Privacy Policy</Link>.
               </label>
             </div>
 
@@ -235,7 +235,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
               <button
                 type="submit" disabled={loading}
                 style={{
-                  background: '#C4952A', color: '#fff', border: 'none',
+                  background: 'var(--color-gold)', color: '#fff', border: 'none',
                   padding: '13px 48px', fontFamily: F_JOST, fontWeight: '700',
                   fontSize: '13px', letterSpacing: '0.1em', cursor: loading ? 'not-allowed' : 'pointer',
                   textTransform: 'uppercase', borderRadius: '3px',

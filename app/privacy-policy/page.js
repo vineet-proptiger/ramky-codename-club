@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { PROJECT_NAME } from '../../lib/config'
+import { logoImages } from '../../lib/images'
 import AosInit from '../../components/AosInit'
 
 const GOLD = 'var(--color-gold)'
@@ -27,7 +28,7 @@ export default function PrivacyPolicy() {
 
         <div className="container mx-auto px-4 md:px-8 flex items-center justify-between h-[80px]">
           <Link href="/" className="flex items-center">
-            <img src="/images/logo/logo1.png" alt={PROJECT_NAME} className="h-10 sm:h-14 w-auto object-contain" />
+            <img src={logoImages.main} alt={PROJECT_NAME} className="h-10 sm:h-14 w-auto object-contain" style={{ borderRadius: '8px', overflow: 'hidden' }} />
           </Link>
           <Link
             href="/"

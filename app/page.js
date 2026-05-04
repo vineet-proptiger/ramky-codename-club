@@ -80,7 +80,7 @@ export default function Home() {
         <button
           onClick={() => setIsOpen(true)}
           className="flex-1 flex items-center justify-center py-3"
-          style={{ background: '#C4952A' }}
+          style={{ background: 'var(--color-gold)' }}
         >
           <svg width="22" height="22" fill="none" stroke="#ffffff" strokeWidth="2" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round"

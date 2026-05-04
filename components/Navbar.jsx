@@ -35,9 +35,9 @@ const Navbar = ({ setIsOpen }) => {
     <nav
       className="fixed top-0 left-0 right-0 z-50"
       style={{
-        background: (scrolled || mobileOpen) ? 'rgba(26,26,26,1)' : 'rgba(26,26,26,0)',
-        borderBottom: (scrolled || mobileOpen) ? '1px solid #2a2a2a' : '1px solid transparent',
-        boxShadow: scrolled ? '0 2px 16px rgba(0,0,0,0.5)' : 'none',
+        background: (scrolled || mobileOpen) ? 'rgba(13,59,80,0.97)' : 'rgba(13,59,80,0)',
+        borderBottom: (scrolled || mobileOpen) ? '1px solid rgba(196,149,42,0.2)' : '1px solid transparent',
+        boxShadow: scrolled ? '0 2px 20px rgba(13,59,80,0.5)' : 'none',
         transition: 'background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease',
       }}
     >
@@ -69,7 +69,7 @@ const Navbar = ({ setIsOpen }) => {
                   transition: 'color 0.2s',
                   position: 'relative',
                 }}
-                onMouseEnter={e => (e.target.style.color = '#C4952A')}
+                onMouseEnter={e => (e.target.style.color = 'var(--color-gold)')}
                 onMouseLeave={e => (e.target.style.color = '#ffffff')}
               >
                 {link.name}
@@ -78,7 +78,7 @@ const Navbar = ({ setIsOpen }) => {
           </div>
 
           {/* Phone — Desktop */}
-          <a
+          {/* <a
             href={`tel:${PHONE}`}
             className="hidden lg:block"
             style={{
@@ -90,11 +90,11 @@ const Navbar = ({ setIsOpen }) => {
               textDecoration: 'none',
               transition: 'color 0.2s',
             }}
-            onMouseEnter={e => (e.target.style.color = '#C4952A')}
+            onMouseEnter={e => (e.target.style.color = 'var(--color-gold)')}
             onMouseLeave={e => (e.target.style.color = '#ffffff')}
           >
             {PHONE_DISPLAY}
-          </a>
+          </a> */}
 
           {/* Mobile hamburger */}
           <div className="lg:hidden flex items-center">
@@ -111,7 +111,7 @@ const Navbar = ({ setIsOpen }) => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div style={{ background: '#111111', borderTop: '1px solid #2a2a2a' }}>
+        <div style={{ background: '#0D3B50', borderTop: '1px solid rgba(196,149,42,0.2)' }}>
           {navLinks.map(link => (
             <a
               key={link.name}
@@ -126,10 +126,10 @@ const Navbar = ({ setIsOpen }) => {
                 color: '#ffffff',
                 letterSpacing: '0.04em',
                 textTransform: 'uppercase',
-                borderBottom: '1px solid #1f1f1f',
+                borderBottom: '1px solid rgba(255,255,255,0.08)',
                 transition: 'color 0.2s, background 0.2s',
               }}
-              onMouseEnter={e => { e.currentTarget.style.color = '#C4952A'; e.currentTarget.style.background = '#1f1f1f' }}
+              onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-gold)'; e.currentTarget.style.background = 'rgba(255,255,255,0.07)' }}
               onMouseLeave={e => { e.currentTarget.style.color = '#ffffff'; e.currentTarget.style.background = 'transparent' }}
             >
               {link.name}

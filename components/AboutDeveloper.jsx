@@ -21,11 +21,12 @@ const AboutGodrej = () => (
           fontFamily: F_JOST, fontWeight: '800',
           fontSize: 'clamp(24px,3.5vw,36px)',
           color: '#1a1a1a', textTransform: 'uppercase',
-          letterSpacing: '0.04em', margin: '0 0 28px',
+          letterSpacing: '0.04em', margin: '0 0 14px',
         }}
       >
         ABOUT RAMKY GROUP
       </h2>
+      <div data-aos="fade-up" style={{ width: '60px', height: '4px', background: 'var(--color-gold)', margin: '0 auto 28px', borderRadius: '2px' }} />
 
       {/* Description */}
       <p
@@ -34,7 +35,7 @@ const AboutGodrej = () => (
         style={{
           fontFamily: F_SANS, fontSize: '14.5px',
           color: '#555555', lineHeight: 1.9,
-          margin: '0 0 52px',
+          margin: '0 0 52px', textAlign: 'justify',
         }}
       >
         Ramky Group is one of India&apos;s leading real estate developers, known for delivering
@@ -80,7 +81,7 @@ const AboutGodrej = () => (
             {i < stats.length - 1 && (
               <div style={{
                 width: '1px', height: '60px',
-                background: '#C4952A',
+                background: 'var(--color-gold)',
                 flexShrink: 0,
               }} />
             )}

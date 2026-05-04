@@ -26,10 +26,11 @@ const Location = () => (
             fontFamily: F_JOST, fontWeight: '800',
             fontSize: 'clamp(24px,3.5vw,36px)',
             color: '#ffffff', textTransform: 'uppercase',
-            letterSpacing: '0.04em', margin: '0 0 32px',
+            letterSpacing: '0.04em', margin: '0 0 14px',
           }}>
             LOCATION<br />ADVANTAGES
           </h2>
+          <div style={{ width: '60px', height: '4px', background: 'var(--color-gold)', margin: '0 0 28px', borderRadius: '2px' }} />
 
           {/* 2-column location boxes */}
           <div style={{
@@ -50,7 +51,7 @@ const Location = () => (
                   transition: 'border-color 0.2s, background 0.2s',
                 }}
                 onMouseEnter={e => {
-                  e.currentTarget.style.borderColor = '#C4952A'
+                  e.currentTarget.style.borderColor = 'var(--color-gold)'
                   e.currentTarget.style.background = '#2a2318'
                 }}
                 onMouseLeave={e => {
@@ -66,7 +67,7 @@ const Location = () => (
                 </p>
                 <p style={{
                   fontFamily: F_SANS, fontSize: '12px',
-                  color: '#C4952A', margin: 0, fontWeight: '600',
+                  color: 'var(--color-gold)', margin: 0, fontWeight: '600',
                 }}>
                   {loc.dist}
                 </p>
@@ -79,7 +80,7 @@ const Location = () => (
         <div className="w-full lg:flex-1" data-aos="fade-left" style={{ minHeight: '420px' }}>
           <div style={{
             borderRadius: '4px', overflow: 'hidden',
-            border: '1px solid #C4952A',
+            border: '1px solid var(--color-gold)',
             height: '100%', minHeight: '420px',
             position: 'relative',
           }}>

@@ -20,7 +20,7 @@ const Footer = () => (
       </p>
       <p style={{
         fontFamily: F_JOST, fontSize: '13px',
-        color: '#C4952A', fontWeight: '600', letterSpacing: '0.04em',
+        color: 'var(--color-gold)', fontWeight: '600', letterSpacing: '0.04em',
       }}>
         Project RERA No.: Update Soon
       </p>
@@ -39,7 +39,7 @@ const Footer = () => (
       </p>
       <Link
         href="/privacy-policy"
-        style={{ fontFamily: F_SANS, fontSize: '13px', color: '#C4952A', textDecoration: 'underline' }}
+        style={{ fontFamily: F_SANS, fontSize: '13px', color: 'var(--color-gold)', textDecoration: 'underline' }}
       >
         Privacy Policy
       </Link>

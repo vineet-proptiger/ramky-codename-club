@@ -167,7 +167,7 @@ const AmenityCard = ({ item, index, start }) => {
       {/* Gold underline */}
       <div style={{
         width: '36px', height: '2px',
-        background: '#C4952A',
+        background: 'var(--color-gold)',
         margin: '0 auto',
         borderRadius: '1px',
       }} />
@@ -195,11 +195,12 @@ const Amenities = ({ setIsOpen }) => {
             fontSize: 'clamp(28px,4vw,40px)',
             color: '#1a1a1a', textAlign: 'center',
             textTransform: 'uppercase', letterSpacing: '0.04em',
-            margin: '0 0 48px',
+            margin: '0 0 14px',
           }}
         >
           AMENITIES
         </h2>
+        <div style={{ width: '60px', height: '4px', background: 'var(--color-gold)', margin: '0 auto 44px', borderRadius: '2px' }} />
 
         {/* Slider row */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
@@ -209,13 +210,13 @@ const Amenities = ({ setIsOpen }) => {
             onClick={prev}
             style={{
               flexShrink: 0, width: '44px', height: '44px',
-              background: '#C4952A', border: 'none', borderRadius: '2px',
+              background: 'var(--color-gold)', border: 'none', borderRadius: '2px',
               color: '#fff', fontSize: '22px', cursor: 'pointer',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               transition: 'background 0.2s',
             }}
-            onMouseEnter={e => (e.currentTarget.style.background = '#9A7518')}
-            onMouseLeave={e => (e.currentTarget.style.background = '#C4952A')}
+            onMouseEnter={e => (e.currentTarget.style.background = 'var(--color-gold-dark)')}
+            onMouseLeave={e => (e.currentTarget.style.background = 'var(--color-gold)')}
             aria-label="Previous"
           >
             ‹
@@ -238,13 +239,13 @@ const Amenities = ({ setIsOpen }) => {
             onClick={next}
             style={{
               flexShrink: 0, width: '44px', height: '44px',
-              background: '#C4952A', border: 'none', borderRadius: '2px',
+              background: 'var(--color-gold)', border: 'none', borderRadius: '2px',
               color: '#fff', fontSize: '22px', cursor: 'pointer',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               transition: 'background 0.2s',
             }}
-            onMouseEnter={e => (e.currentTarget.style.background = '#9A7518')}
-            onMouseLeave={e => (e.currentTarget.style.background = '#C4952A')}
+            onMouseEnter={e => (e.currentTarget.style.background = 'var(--color-gold-dark)')}
+            onMouseLeave={e => (e.currentTarget.style.background = 'var(--color-gold)')}
             aria-label="Next"
           >
             ›
@@ -260,7 +261,7 @@ const Amenities = ({ setIsOpen }) => {
               style={{
                 width: start === i ? '24px' : '8px',
                 height: '4px',
-                background: start === i ? '#C4952A' : '#ccc',
+                background: start === i ? 'var(--color-gold)' : '#ccc',
                 border: 'none', borderRadius: '2px', cursor: 'pointer',
                 transition: 'all 0.3s',
               }}

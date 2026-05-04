@@ -112,7 +112,7 @@ const DownloadCard = ({ doc, setIsOpen }) => {
         {/* Gold underline */}
         <div style={{
           width: '40px', height: '2px',
-          background: '#C4952A',
+          background: 'var(--color-gold)',
           margin: '0 auto',
           borderRadius: '1px',
         }} />
@@ -123,15 +123,15 @@ const DownloadCard = ({ doc, setIsOpen }) => {
         onClick={() => setIsOpen(true)}
         style={{
           display: 'block', width: '100%',
-          background: '#C4952A', color: '#fff', border: 'none',
+          background: 'var(--color-gold)', color: '#fff', border: 'none',
           padding: '15px 0',
           fontFamily: F_JOST, fontWeight: '700', fontSize: '13px',
           letterSpacing: '0.12em', textTransform: 'uppercase',
           cursor: 'pointer', transition: 'background 0.2s',
           flexShrink: 0,
         }}
-        onMouseEnter={e => (e.currentTarget.style.background = '#9A7518')}
-        onMouseLeave={e => (e.currentTarget.style.background = '#C4952A')}
+        onMouseEnter={e => (e.currentTarget.style.background = 'var(--color-gold-dark)')}
+        onMouseLeave={e => (e.currentTarget.style.background = 'var(--color-gold)')}
       >
         DOWNLOAD
       </button>
@@ -140,7 +140,7 @@ const DownloadCard = ({ doc, setIsOpen }) => {
 }
 
 const Downloads = ({ setIsOpen }) => (
-  <section id="downloads" style={{ padding: '72px 0', background: '#111111' }}>
+  <section id="downloads" style={{ padding: '72px 0', background: 'var(--color-dark)' }}>
     {/* Truly Full width */}
     <div style={{ width: '100%', padding: '0' }}>
 
@@ -152,11 +152,12 @@ const Downloads = ({ setIsOpen }) => (
           fontSize: 'clamp(28px,4vw,40px)',
           color: '#ffffff', textAlign: 'center',
           textTransform: 'uppercase', letterSpacing: '0.04em',
-          margin: '0 0 48px',
+          margin: '0 0 14px',
         }}
       >
         DOWNLOADS
       </h2>
+      <div style={{ width: '60px', height: '4px', background: 'var(--color-gold)', margin: '0 auto 44px', borderRadius: '2px' }} />
 
       {/* 4 cards — full width grid with gaps */}
       <div

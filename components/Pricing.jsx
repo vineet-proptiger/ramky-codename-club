@@ -21,11 +21,12 @@ const Pricing = ({ setIsOpen }) => (
           fontSize: 'clamp(28px,4vw,40px)',
           color: '#ffffff', textAlign: 'center',
           textTransform: 'uppercase', letterSpacing: '0.04em',
-          margin: '0 0 48px',
+          margin: '0 0 14px',
         }}
       >
         PRICE LIST
       </h2>
+      <div style={{ width: '60px', height: '4px', background: 'var(--color-gold)', margin: '0 auto 44px', borderRadius: '2px' }} />
 
       {/* ── Mobile: Cards (hidden on md+) ── */}
       <div className="flex flex-col gap-4 md:hidden">
@@ -49,7 +50,7 @@ const Pricing = ({ setIsOpen }) => (
               </span>
               <span style={{
                 fontFamily: F_JOST, fontWeight: '700', fontSize: '14px',
-                color: '#C4952A', letterSpacing: '0.04em', textAlign: 'right',
+                color: 'var(--color-gold)', letterSpacing: '0.04em', textAlign: 'right',
               }}>
                 {row.price}
               </span>
@@ -80,7 +81,7 @@ const Pricing = ({ setIsOpen }) => (
               {['TYPE', 'SIZES', 'PRICE', 'UNLOCK OFFERS'].map((col, i) => (
                 <th key={i} style={{
                   fontFamily: F_JOST, fontWeight: '700', fontSize: '13px',
-                  color: '#C4952A', letterSpacing: '0.12em',
+                  color: 'var(--color-gold)', letterSpacing: '0.12em',
                   textTransform: 'uppercase', textAlign: 'center',
                   padding: '20px 16px',
                   border: '2px solid #888888',
