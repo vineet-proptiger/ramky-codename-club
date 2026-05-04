@@ -88,10 +88,10 @@ export default function PrivacyPolicy() {
             {/* Intro */}
             <p className="mb-6 sm:mb-8 text-sm sm:text-base" style={{ lineHeight: 1.8, color: '#444', fontFamily: 'var(--font-jost), Jost, sans-serif' }}>
               At{' '}
-              <Link href="https://ramkyclubclass.in" style={{ color: 'var(--color-gold-dark)', fontWeight: '600', textDecoration: 'underline' }}>
-                {PROJECT_NAME}
+              <Link href="http://ramkyupcomingprojects.in" style={{ color: 'var(--color-gold-dark)', fontWeight: '600', textDecoration: 'underline' }}>
+                Ramky Codename Club
               </Link>{' '}
-              (Authorized Marketing Partner), we respect your privacy and are committed to safeguarding your personal data. This Privacy Policy outlines how we collect, use, and protect your information when you visit our website.
+              (Authorized Marketing Partner), we are committed to safeguarding your personal privacy. This Privacy Policy outlines how we collect, use, and protect your information when you visit our website.
             </p>
 
             {/* ── Section 1 ── */}
@@ -300,7 +300,7 @@ export default function PrivacyPolicy() {
       {/* ── Footer (mini) ── */}
       <footer style={{ background: 'var(--color-dark)', color: '#fff', padding: '24px', textAlign: 'center', borderTop: '1px solid #333' }}>
         <p style={{ fontSize: '13px', color: '#888', fontFamily: 'var(--font-sans)' }}>
-          &copy; 2026 Ramky Codename Club Class. All rights reserved |{' '}
+          &copy; 2026 Ramky Codename Club. All rights reserved |{' '}
           <Link href="/" style={{ color: 'var(--color-gold)', textDecoration: 'none' }}>Back to Home</Link>
         </p>
       </footer>
