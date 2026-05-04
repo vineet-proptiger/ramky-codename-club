@@ -14,7 +14,7 @@ const highlights = [
   { title: 'Landscaped Gardens', sub: 'Lush green gardens & open spaces' },
   { title: '24/7 Security', sub: 'Round-the-clock gated security' },
   { title: 'Family Community', sub: 'Modern, family-friendly living environment' },
-  { title: 'Investment Potential', sub: 'Luxury, convenience & long-term returns' },
+  { title: 'Upgrade to Club-Class Living', sub: 'Because ordinary homes don’t match your ambition' },
 ]
 
 const Highlights = ({ setIsOpen }) => (
