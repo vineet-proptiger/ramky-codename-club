@@ -7,14 +7,14 @@ const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const highlights = [
-  { title: 'Gated Security',         sub: 'Secure 24/7 gated community' },
-  { title: 'Green Spaces',           sub: 'Landscaped gardens & open areas' },
-  { title: 'Modern Architecture',    sub: 'Contemporary design & aesthetics' },
-  { title: 'Smart Layouts',          sub: 'Optimized space utilization' },
-  { title: 'IT Connectivity',        sub: 'Close proximity to major IT hubs' },
-  { title: 'Premium Finishes',       sub: 'High quality materials & fittings' },
-  { title: 'Family Living',          sub: 'Designed for families & professionals' },
-  { title: 'Strategic Location',     sub: 'Near schools, hospitals & malls' },
+  { title: 'IT Hub Proximity',       sub: 'Excellent connectivity to major IT hubs' },
+  { title: 'Prime Location',         sub: 'Apartments near Thanisandra highly desirable' },
+  { title: 'Easy Commute',           sub: 'Near schools, hospitals & transport routes' },
+  { title: 'Clubhouse & Amenities',  sub: 'World-class clubhouse & lifestyle facilities' },
+  { title: 'Landscaped Gardens',     sub: 'Lush green gardens & open spaces' },
+  { title: '24/7 Security',          sub: 'Round-the-clock gated security' },
+  { title: 'Family Community',       sub: 'Modern, family-friendly living environment' },
+  { title: 'Investment Potential',   sub: 'Luxury, convenience & long-term returns' },
 ]
 
 const Highlights = ({ setIsOpen }) => (

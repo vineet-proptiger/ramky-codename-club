@@ -6,13 +6,13 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const locations = [
   { name: 'National Public School, Thanisandra', dist: '2 KM' },
-  { name: 'Columbia Asia Hospital',              dist: '3 KM' },
-  { name: 'Manyata Tech Park',                   dist: '3 KM' },
-  { name: 'Esteem Mall, Hebbal',                 dist: '5 KM' },
-  { name: 'Bangalore Int. Airport',              dist: '28 KM' },
-  { name: 'Hebbal Lake',                         dist: '5 KM' },
-  { name: 'Manipal Hospital, Hebbal',            dist: '5 KM' },
-  { name: 'KR Puram Railway Station',            dist: '10 KM' },
+  { name: 'Columbia Asia Hospital', dist: '3 KM' },
+  { name: 'Manyata Tech Park', dist: '3 KM' },
+  { name: 'Esteem Mall, Hebbal', dist: '5 KM' },
+  { name: 'Bangalore Int. Airport', dist: '28 KM' },
+  { name: 'Hebbal Lake', dist: '5 KM' },
+  { name: 'Manipal Hospital, Hebbal', dist: '5 KM' },
+  { name: 'KR Puram Railway Station', dist: '10 KM' },
 ]
 
 const Location = () => (
@@ -51,11 +51,11 @@ const Location = () => (
                 }}
                 onMouseEnter={e => {
                   e.currentTarget.style.borderColor = '#C4952A'
-                  e.currentTarget.style.background  = '#2a2318'
+                  e.currentTarget.style.background = '#2a2318'
                 }}
                 onMouseLeave={e => {
                   e.currentTarget.style.borderColor = '#2e2e2e'
-                  e.currentTarget.style.background  = '#242424'
+                  e.currentTarget.style.background = '#242424'
                 }}
               >
                 <p style={{
