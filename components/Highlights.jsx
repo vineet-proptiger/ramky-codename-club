@@ -1,20 +1,20 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import { heroImages } from '../lib/images'
+import { highlightsMainImage } from '../lib/images'
 
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const highlights = [
-  { title: 'IT Hub Proximity',       sub: 'Excellent connectivity to major IT hubs' },
-  { title: 'Prime Location',         sub: 'Apartments near Thanisandra highly desirable' },
-  { title: 'Easy Commute',           sub: 'Near schools, hospitals & transport routes' },
-  { title: 'Clubhouse & Amenities',  sub: 'World-class clubhouse & lifestyle facilities' },
-  { title: 'Landscaped Gardens',     sub: 'Lush green gardens & open spaces' },
-  { title: '24/7 Security',          sub: 'Round-the-clock gated security' },
-  { title: 'Family Community',       sub: 'Modern, family-friendly living environment' },
-  { title: 'Investment Potential',   sub: 'Luxury, convenience & long-term returns' },
+  { title: 'IT Hub Proximity', sub: 'Excellent connectivity to major IT hubs' },
+  { title: 'Prime Location', sub: 'Apartments near Thanisandra highly desirable' },
+  { title: 'Easy Commute', sub: 'Near schools, hospitals & transport routes' },
+  { title: 'Clubhouse & Amenities', sub: 'World-class clubhouse & lifestyle facilities' },
+  { title: 'Landscaped Gardens', sub: 'Lush green gardens & open spaces' },
+  { title: '24/7 Security', sub: 'Round-the-clock gated security' },
+  { title: 'Family Community', sub: 'Modern, family-friendly living environment' },
+  { title: 'Investment Potential', sub: 'Luxury, convenience & long-term returns' },
 ]
 
 const Highlights = ({ setIsOpen }) => (
@@ -28,7 +28,7 @@ const Highlights = ({ setIsOpen }) => (
         data-aos="fade-right"
       >
         <Image
-          src={heroImages.banner2}
+          src={highlightsMainImage}
           alt="Ramky Codename Club Class Highlights"
           fill
           className="object-cover"
@@ -40,14 +40,14 @@ const Highlights = ({ setIsOpen }) => (
 
       {/* RIGHT — content */}
       <div
-        className="w-full lg:w-[55%] flex flex-col justify-center"
-        style={{ padding: 'clamp(36px,6vw,72px) clamp(24px,5vw,64px)' }}
+        className="w-full lg:w-[55%] flex flex-col justify-start"
+        style={{ padding: '7px clamp(24px,5vw,64px) 32px' }}
         data-aos="fade-left"
       >
         <h2 style={{
           fontFamily: F_JOST, fontWeight: '800',
           fontSize: 'clamp(28px,4vw,40px)',
-          color: '#ffffff', margin: '0 0 32px',
+          color: '#ffffff', margin: '0 0 20px',
           textTransform: 'uppercase', letterSpacing: '0.04em',
         }}>
           HIGHLIGHTS
