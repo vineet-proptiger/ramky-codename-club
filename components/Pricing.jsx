@@ -5,8 +5,8 @@ const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const rows = [
-  { type: '3 BHK', size: '1800 SQ. FT.*', price: '₹ 2.15 Cr*' },
-  { type: '3.5 BHK', size: '2350 SQ. FT.*', price: 'On Request' },
+  { type: '3 BHK Apartments', size: '1800 Sq.ft', price: '₹ 2.15 Cr*' },
+  { type: '3.5 BHK Apartments', size: '2350 Sq.ft', price: '₹ 3.50 Cr*' },
 ]
 
 const Pricing = ({ setIsOpen }) => (

@@ -1,16 +1,18 @@
 'use client'
-import React from 'react'
+
 
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const locations = [
-  { name: 'Manyata Tech Park',          dist: '3 KM' },
-  { name: 'Hebbal',                     dist: '5 KM' },
-  { name: 'Outer Ring Road',            dist: '4 KM' },
-  { name: 'Columbia Asia Hospital',     dist: '3 KM' },
-  { name: 'Esteem Mall',                dist: '4 KM' },
-  { name: 'Kempegowda Int. Airport',   dist: '25 MINS' },
+  { name: 'National Public School, Thanisandra', dist: '2 KM' },
+  { name: 'Columbia Asia Hospital',              dist: '3 KM' },
+  { name: 'Manyata Tech Park',                   dist: '3 KM' },
+  { name: 'Esteem Mall, Hebbal',                 dist: '5 KM' },
+  { name: 'Bangalore Int. Airport',              dist: '28 KM' },
+  { name: 'Hebbal Lake',                         dist: '5 KM' },
+  { name: 'Manipal Hospital, Hebbal',            dist: '5 KM' },
+  { name: 'KR Puram Railway Station',            dist: '10 KM' },
 ]
 
 const Location = () => (
@@ -82,7 +84,7 @@ const Location = () => (
             position: 'relative',
           }}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.6!2d77.6272!3d13.0560!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae19c3b3b3b3b3%3A0x0!2sThanisandra%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1777715011137!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d51255.141547507825!2d77.624735!3d13.058203!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae19e179b194b5%3A0x6bb5ac64fb789a1c!2sThanisandra%2C%20Bengaluru%2C%20Karnataka!5e1!3m2!1sen!2sin!4v1777874167574!5m2!1sen!2sin"
               width="100%" height="100%"
               style={{ border: 0, minHeight: '420px', display: 'block', filter: 'grayscale(20%)' }}
               allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
