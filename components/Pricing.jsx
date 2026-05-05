@@ -6,7 +6,7 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const rows = [
   { type: '3 BHK Apartments', size: '1800 Sq.ft', price: '₹ 2.15 Cr*' },
-  { type: '3.5 BHK Apartments', size: '2350 Sq.ft', price: '₹ 3.50 Cr*' },
+  { type: '3.5 BHK Apartments', size: '2350 Sq.ft', price: 'Ask for Price' },
 ]
 
 const Pricing = ({ setIsOpen }) => (
