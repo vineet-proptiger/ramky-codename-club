@@ -23,19 +23,21 @@ const Highlights = ({ setIsOpen }) => (
 
       {/* LEFT — image */}
       <div
-        className="w-full lg:w-[45%] relative"
-        style={{ minHeight: '340px' }}
+        className="w-full lg:w-[45%] relative p-4 sm:p-6 lg:p-8"
+        style={{ minHeight: '400px' }}
         data-aos="fade-right"
       >
-        <Image
-          src={highlightsMainImage}
-          alt="Ramky Codename Club Class Highlights"
-          fill
-          className="object-cover"
-          sizes="(max-width:1024px) 100vw, 45vw"
-        />
-        {/* subtle dark overlay on image */}
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.18)' }} />
+        <div className="relative w-full h-full overflow-hidden rounded-2xl shadow-2xl">
+          <Image
+            src={highlightsMainImage}
+            alt="Ramky Codename Club Class Highlights"
+            fill
+            className="object-cover"
+            sizes="(max-width:1024px) 100vw, 45vw"
+          />
+          {/* subtle dark overlay on image */}
+          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.15)' }} />
+        </div>
       </div>
 
       {/* RIGHT — content */}
