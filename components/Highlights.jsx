@@ -23,8 +23,8 @@ const Highlights = ({ setIsOpen }) => (
 
       {/* LEFT — image */}
       <div
-        className="w-full lg:w-[45%] relative p-4 sm:p-6 lg:p-8"
-        style={{ minHeight: '400px' }}
+        className="w-full lg:w-[45%] relative p-4 sm:p-6 lg:p-8 h-[320px] sm:h-[400px] lg:h-auto"
+        style={{ minHeight: '320px' }}
         data-aos="fade-right"
       >
         <div className="relative w-full h-full overflow-hidden rounded-2xl shadow-2xl">
@@ -32,7 +32,7 @@ const Highlights = ({ setIsOpen }) => (
             src={highlightsMainImage}
             alt="Ramky Codename Club Class Highlights"
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="(max-width:1024px) 100vw, 45vw"
           />
           {/* subtle dark overlay on image */}
