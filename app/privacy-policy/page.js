@@ -32,7 +32,7 @@ export default function PrivacyPolicy() {
           </Link>
           <Link
             href="/"
-            className="text-[11px] sm:text-sm font-semibold px-4 py-2 sm:px-6 sm:py-2.5 rounded-full transition-all hover:opacity-90 btn-primary shadow-lg"
+            className="btn-gold text-[11px] sm:text-sm shadow-lg"
           >
             ← BACK TO HOME
           </Link>
