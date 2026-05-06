@@ -49,7 +49,7 @@ const Navbar = ({ setIsOpen }) => {
             <img
               src={logoImages.main}
               alt="Ramky Codename Club Class"
-              style={{ height: 'clamp(52px, 10vw, 68px)', width: 'auto', objectFit: 'contain', maxWidth: '240px' }}
+              style={{ height: 'clamp(115px, 30vw, 160px)', width: 'auto', objectFit: 'contain', maxWidth: '600px' }}
             />
           </a>
 

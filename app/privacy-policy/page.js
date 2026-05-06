@@ -22,13 +22,13 @@ export default function PrivacyPolicy() {
       <AosInit />
 
       {/* ── Navbar (Sticky/Fixed) ── */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'shadow-sm'}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'shadow-sm'}`} style={{ background: '#0D3B50' }}>
         {/* Top Teal Accent Line */}
         <div className="h-0.5 w-full" style={{ background: `linear-gradient(90deg, var(--color-gold), var(--color-gold-light), var(--color-gold))` }}></div>
 
         <div className="container mx-auto px-4 md:px-8 flex items-center justify-between h-[80px]">
           <Link href="/" className="flex items-center">
-            <img src={logoImages.main} alt={PROJECT_NAME} className="h-10 sm:h-14 w-auto object-contain" style={{ borderRadius: '8px', overflow: 'hidden' }} />
+            <img src={logoImages.main} alt={PROJECT_NAME} className="h-28 sm:h-36 w-auto object-contain" style={{ borderRadius: '8px', overflow: 'hidden' }} />
           </Link>
           <Link
             href="/"
