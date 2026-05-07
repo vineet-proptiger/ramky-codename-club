@@ -31,7 +31,7 @@ export default function PrivacyPolicy() {
             <img src={logoImages.main} alt={PROJECT_NAME} className="h-28 sm:h-36 w-auto object-contain" style={{ borderRadius: '8px', overflow: 'hidden' }} />
           </Link>
           <Link
-            href="/"
+            href="/codename-club-class-bangalore"
             className="btn-gold text-[11px] sm:text-sm shadow-lg"
           >
             ← BACK TO HOME
@@ -302,7 +302,7 @@ export default function PrivacyPolicy() {
       <footer style={{ background: 'var(--color-dark)', color: '#fff', padding: '24px', textAlign: 'center', borderTop: '1px solid #333' }}>
         <p style={{ fontSize: '13px', color: '#888', fontFamily: 'var(--font-sans)' }}>
           &copy; 2026 Ramky Codename Club. All rights reserved |{' '}
-          <Link href="/" style={{ color: 'var(--color-gold)', textDecoration: 'none' }}>Back to Home</Link>
+          <Link href="/codename-club-class-bangalore" style={{ color: 'var(--color-gold)', textDecoration: 'none' }}>Back to Home</Link>
         </p>
       </footer>
     </main>
