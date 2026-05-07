@@ -18,19 +18,24 @@ const locations = [
 const Location = () => (
   <section id="location" style={{ padding: '72px 0', background: '#1a1a1a' }}>
     <div className="container mx-auto px-4 md:px-8">
+      {/* Heading centered at top */}
+      <div data-aos="fade-up" style={{ textAlign: 'center', marginBottom: '48px' }}>
+        <h2 style={{
+          fontFamily: F_JOST, fontWeight: '800',
+          fontSize: 'clamp(28px,4vw,40px)',
+          color: '#ffffff', textTransform: 'uppercase',
+          letterSpacing: '0.04em', margin: '0 0 14px',
+        }}>
+          LOCATION ADVANTAGES
+        </h2>
+        <div style={{ width: '60px', height: '4px', background: 'var(--color-gold)', margin: '0 auto', borderRadius: '2px' }} />
+      </div>
+
       <div className="flex flex-col lg:flex-row gap-10 items-start">
 
-        {/* LEFT — heading + grid */}
+        {/* LEFT — grid */}
         <div className="w-full lg:w-[42%]" data-aos="fade-right">
-          <h2 style={{
-            fontFamily: F_JOST, fontWeight: '800',
-            fontSize: 'clamp(24px,3.5vw,36px)',
-            color: '#ffffff', textTransform: 'uppercase',
-            letterSpacing: '0.04em', margin: '0 0 14px',
-          }}>
-            LOCATION<br />ADVANTAGES
-          </h2>
-          <div style={{ width: '60px', height: '4px', background: 'var(--color-gold)', margin: '0 0 28px', borderRadius: '2px' }} />
+
 
           {/* 2-column location boxes */}
           <div style={{

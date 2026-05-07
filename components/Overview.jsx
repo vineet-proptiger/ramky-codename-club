@@ -13,9 +13,9 @@ const stats = [
   { value: 'Update Soon', label: 'RERA No.' },
   { value: '3 Acres*', label: 'Total Land Area' },
   { value: 'Pre-Launch', label: 'Status' },
-  { value: 'Update Soon', label: 'No. of Towers' },
-  { value: 'Update Soon', label: 'No. of Floors' },
-  { value: '3 & 3.5 BHK', label: 'Unit Variants' },
+  { value: '2 Towers', label: 'No. of Towers' },
+  { value: 'G+28 Floors', label: 'No. of Floors' },
+  { value: '220 Units', label: 'Total Units' },
 ]
 
 const inputStyle = {
@@ -146,11 +146,9 @@ const Overview = () => (
             fontFamily: F_SANS, fontSize: '14.5px', color: '#444444',
             lineHeight: 1.9, margin: '0 0 32px', textAlign: 'justify',
           }}>
-            Ramky Codename Club Class is a premium residential development by Ramky Group, offering 3 & 3.5 BHK apartments across a well-planned 3-acre community in North Bangalore. Designed for modern living, the project combines spacious interiors, contemporary architecture and a secure, gated environment, making it ideal for families and professionals alike.
-
-            The apartments range from 1800 to 2350 sq.ft., featuring spacious 3 BHK flats and premium 3.5 BHK homes with high quality finishes and smart layouts. Residents can enjoy thoughtfully designed spaces that balance comfort, functionality and aesthetics, creating a home that suits every lifestyle.
-
-            Located in Thanisandra, Bangalore, the project offers excellent connectivity to IT hubs, schools, hospitals, shopping centers and major transport routes. Its strategic position ensures convenience for daily commuters, investors and families, making apartments near Thanisandra highly desirable.
+            Ramky Codename Club Class is a premium residential development by Ramky Group, featuring a well-planned 3-acre gated community in North Bangalore. The project offers a limited collection of 220 exclusive apartments spread across 2 magnificent towers with G+28 storeys, designed for modern living. This development combines spacious interiors, contemporary architecture, and a secure environment, making it ideal for families and professionals alike.
+            The homes range from 1800 to 2350 sq.ft., offering expansive 3 and 3.5 BHK configurations with high-quality finishes and smart layouts. Residents can enjoy thoughtfully designed spaces that balance comfort, functionality, and aesthetics, creating a home that suits every lifestyle.
+            Located in Thanisandra, Bangalore, the project offers excellent connectivity to IT hubs, schools, hospitals, shopping centers, and major transport routes. Its strategic position ensures convenience for daily commuters, investors, and families, making these premium residences highly desirable.
           </p>
 
           {/* Stats grid commented out

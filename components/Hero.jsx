@@ -171,7 +171,7 @@ const Hero = ({ setIsOpen }) => {
         }}>
           {[
             '3 Acre Gated Community',
-            'Premium 3 & 3.5 BHK Homes',
+            'G+28 High-Rise Floors',
             'North Bangalore\'s Prime Location',
           ].map((point, i) => (
             <div key={i} style={{
